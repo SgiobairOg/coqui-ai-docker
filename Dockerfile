@@ -9,4 +9,4 @@ RUN git clone https://github.com/coqui-ai/TTS.git .
 
 RUN make system-deps
 RUN make install
-CMD python TTS/server/server.py --model_name tts_models/en/ljspeech/tacotron2-DCA --vocoder_name vocoder_models/en/ljspeech/multiband-melgan
+CMD python TTS/server/server.py --model_name tts_models/en/vctk/sc-glow-tts --vocoder_name vocoder_models/en/vctk/hifigan_v2
